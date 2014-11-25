@@ -43,6 +43,8 @@
 #define DCH3200_MODEL_ID1  0x0000d330
 #define DCX3200_MODEL_ID1  0x0000f740
 #define DCX3200_MODEL_ID2  0x0000fa07
+#define DCX3200M_VENDOR_ID1 0x00cc7d37
+#define DCX3200M_MODEL_ID1  0x0000fa05
 
 #define DCX3432_VENDOR_ID1 0x000024a0
 #define DCX3432_MODEL_ID1  0x0000ea05
@@ -528,6 +530,7 @@ int main (int argc, char *argv[])
             (dir.vendor_id == DCH3200_VENDOR_ID3) ||
             (dir.vendor_id == DCH3200_VENDOR_ID4) ||
             (dir.vendor_id == DCH3200_VENDOR_ID5) ||
+            (dir.vendor_id == DCX3200M_VENDOR_ID1) ||
             (dir.vendor_id == DCH3416_VENDOR_ID1) ||
             (dir.vendor_id == DCT3412_VENDOR_ID1) ||
             (dir.vendor_id == DCT3416_VENDOR_ID1) ||
@@ -583,6 +586,7 @@ int main (int argc, char *argv[])
            ((dir.model_id == DCH3200_MODEL_ID1) ||
             (dir.model_id == DCX3200_MODEL_ID1) ||
             (dir.model_id == DCX3200_MODEL_ID2) ||
+            (dir.model_id == DCX3200M_MODEL_ID1) ||
             (dir.model_id == DCX3432_MODEL_ID1) ||
             (dir.model_id == DCH3416_MODEL_ID1) ||
             (dir.model_id == DCT3412_MODEL_ID1) ||
